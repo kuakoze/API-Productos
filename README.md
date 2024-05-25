@@ -21,12 +21,19 @@ Basate en este formato de JSON:
 
 4. En el campo "is_admin" si quieres tener privilegios para realizar todas las operaciones CRUD debes de poner true ✔
 
-## Creación un producto:
+## Creación de un producto:
 Basate en este formato de JSON:
 
 **{"id": "", "id_producto": 1 ,"nombre": "camiseta", "descripcion": "azul y verde", "precio": 30.58, "categoria":"ropa", "stock": 10}**
 
 *📝El campo "id_producto" no se puede repetir*
+
+## Creación de un pedido:
+Basate en este formato JSON
+
+**{"id":"66522d493825ddee0bacfd10", "cod_order": 1,"username": "juanjo", "id_product": "6650f5a5d0a7edc8607519b1"}**
+
+*📝El campo "cod_order" no se puede repetir*
 ________________________________________________________________________________________________________
 
 ## Los Endpoints que se han implementado son:
@@ -77,6 +84,18 @@ modificar. 📤
   
 - Eliminar usuario: Endpoint para eliminar un usuario de la plataforma.
 Deberá recibir el ID del usuario a eliminar y eliminarlo de la base de datos. 📤
-
   
 - Creación de registro: Endpoint para crear un registro con autenticacion OAuth2. 📤
+
+- Crear pedido: Endpoint para crear un nuevo producto en la plataforma.
+Deberá recibir los datos del producto y almacenarlos en la base de datos. 📤
+
+- Listar pedido: Endpoint para listar todos los productos pedidos. 📥
+
+- Buscar pedido por ID: Endpoint para buscar un pedido específico por
+su ID. 📥
+
+- Actualizar pedido: Endpoint para actualizar la información de un pedido
+existente. 📤
+
+- Eliminar pedido: Endpoint para eliminar un pedido de la plataforma. 📤
