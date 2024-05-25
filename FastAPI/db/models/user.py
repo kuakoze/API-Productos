@@ -6,3 +6,6 @@ class User(BaseModel):
     password: str
     email: str
     is_admin: bool
+
+class Userdb(User):
+    password: str
